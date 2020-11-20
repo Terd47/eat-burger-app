@@ -15,7 +15,7 @@ var orm = {
   insertOne: function(burger_name, devoured, cb) {
     var queryString = `INSERT INTO burgers_db.burgers
     (burger_name, devoured)
-    VALUES('${burger_name}','${devoured}');`;
+    VALUES('${burger_name}',${devoured});`;
 
     console.log(queryString);
 
