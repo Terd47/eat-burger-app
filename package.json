@@ -1,9 +1,10 @@
 {
-  "name": "mvc_design",
+  "name": "Eat burger App",
   "version": "1.0.0",
-  "description": "",
+  "description": "Eat the burger  you crave",
   "main": "server.js",
   "scripts": {
+    "start": "server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,5 +17,8 @@
   },
   "devDependencies": {
     "handlebars-helper-css": "^0.1.0"
+  },
+  "engines": {
+    "node": "12.19.0"
   }
 }
