@@ -13,8 +13,7 @@ var orm = {
     });
   },
   insertOne: function(burger_name, devoured, cb) {
-    var queryString = `INSERT INTO burgers_db.burgers
-    (burger_name, devoured)
+    var queryString = `INSERT INTO burgers (burger_name, devoured)
     VALUES('${burger_name}',${devoured});`;
 
     console.log(queryString);
@@ -29,7 +28,7 @@ var orm = {
   },
   // An example of objColVals would be {name: panther, sleepy: true}
   updateOne: function(burger_name, devoured, id, cb) {
-    var queryString = `UPDATE burgers_db.burgers
+    var queryString = `UPDATE burgers
     SET burger_name='${burger_name}', devoured=${devoured}
     WHERE id=${id};`;
 
